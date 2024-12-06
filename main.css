@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*menu hamburguer */
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+section{
+    padding: 48px 0;
+}
+section h2{
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
+    column-gap: 1%; /* Espaçamento entre as colunas */
+    row-gap: 5%; /* Espaçamento entre as linhas */
+}
+
+.lista-veiculos li {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+    display: block; /* Faz com que as imagens ocupem toda a largura do seu elemento pai */
+}
+.lista-veiculos li h3{
+    margin: 16px 0 ;
+}
+
+.lista-veiculos li button,
+form button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;   
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+.price {
+    margin: 16px 0;
+    display: block;
+}
+.price del{
+    color: #ccc;
+    font-size: 14px;
+}
+.form-campo{
+    margin-bottom: 16px;
+}
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+form{
+    max-width: 360px;
+}
+form button{
+    max-width: 120px;
+}
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+footer li img{
+    height: 32px;
+}
+
+@media screen and (max-width: 640px) {
+    .lista-veiculos {
+        width: 90%;            /* A imagem ocupará 90% da largura do seu contêiner */
+        margin-left: auto;     /* Margem automática à esquerda */
+        margin-right: auto;    /* Margem automática à direita */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 1 coluna de tamanho igual */
+        column-gap: 2%; /* Espaçamento entre as colunas */
+        row-gap: 5%; /* Espaçamento entre as linhas */
+    }
+    
+    .container-flex {
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        width: 90%;            /* A imagem ocupará 90% da largura do seu contêiner */
+        display: block;        /* Faz a imagem ser um bloco */
+        margin-left: auto;     /* Margem automática à esquerda */
+        margin-right: auto;    /* Margem automática à direita */
+    }
+
+    h2,
+    h3 {
+        text-align: center;  /* Centraliza o texto dentro do h2 */
+        margin-top: 12px;    /* Mantém o espaçamento superior */
+    }
+
+    p{
+        text-align: center;  /* Centraliza o texto dentro do p */
+        margin-top: 6px;    /* Mantém o espaçamento superior */
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .lista-veiculos {
+        width: 100%;                  /* O contêiner ocupa 100% da largura disponível */
+        margin-left: auto;            /* Centraliza o contêiner horizontalmente */
+        margin-right: auto;           /* Centraliza o contêiner horizontalmente */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+        column-gap: 1%;               /* Espaçamento entre as colunas */
+        row-gap: 5%;                  /* Espaçamento entre as linhas */
+    }
+    
+    #sobre-a-loja img {
+        width: 100%;                  /* A imagem ocupará toda a largura do seu item na grid */
+        display: block;               /* Faz a imagem ser um bloco */
+        margin-left: auto;            /* Centraliza a imagem à esquerda */
+        margin-right: auto;           /* Centraliza a imagem à direita */
+    }
+    
+    h2, h3 {
+        text-align: center;           /* Centraliza o texto dentro de h2 e h3 */
+        margin-top: 12px;             /* Mantém o espaçamento superior */
+    }
+    
+    p {
+        text-align: center;           /* Centraliza o texto dentro do p */
+        margin-top: 6px;              /* Mantém o espaçamento superior */
+    }
+}
