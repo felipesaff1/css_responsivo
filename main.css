@@ -8,9 +8,7 @@
 html{
     overflow-x: hidden;
 }
-#sobre-a-loja img {
-    max-width: 1200px;
-}
+
 .container {
     max-width: 1460px;
     width: 100%;
@@ -202,15 +200,12 @@ footer li img{
         column-gap: 1%;               /* Espaçamento entre as colunas */
         row-gap: 5%;                  /* Espaçamento entre as linhas */
     }
-<<<<<<< HEAD
     #sobre-a-loja div {
         display: flex;
         flex-direction: column;       /* Coloca a imagem e o texto em uma coluna */
         align-items: center;          /* Alinha a imagem e o texto ao centro */
         text-align: center;           /* Centraliza o texto */
         margin-top: 24px;
-=======
->>>>>>> origin/main
     }
     
     #sobre-a-loja img {
