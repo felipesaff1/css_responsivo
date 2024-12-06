@@ -199,6 +199,9 @@ footer li img{
         column-gap: 1%;               /* Espaçamento entre as colunas */
         row-gap: 5%;                  /* Espaçamento entre as linhas */
     }
+    .container-flex {
+        display: block;
+    }
     
     #sobre-a-loja img {
         width: 100%;                  /* A imagem ocupará toda a largura do seu item na grid */
